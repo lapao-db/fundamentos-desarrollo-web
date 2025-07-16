@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos 2</title>
+    <link rel="stylesheet" href="./fundamentos.css">
+</head>
+<body>
+    <!-- MAQUETAR NUESTRA PAGINA  -->
+
+    <!-- Encabezado -->
+    <header>
+        <!-- Menú de navegación -->
+         <nav>
+            <!-- Todos los menus de navegación son listas -->
+             <!-- Listas -->
+
+              <!-- LISTAS ORDENADAS -> html la genera numerada (se puede quitar con CSS) Pueden ser imagenes, palabras -->
+               <ol>
+                     <li>¿Qué es HTML?</li> <!-- list item -->
+                     <li>Semántica</li>
+                     <li>Etiquetas básicas</li>
+               </ol>
+               <!-- imagenes -->
+                <!-- webp - svg -> formato imagenes para la web cuando se van a usar imagenes descargadas en proyecto -->
+                <img src="https://cdn-icons-png.flaticon.com/512/10001/10001386.png" alt="logo">
+
+                <!-- LISTAS DESORDENADAS -> el navegador entiende que no hay jerarquia, los elementos son del mismo nivel -->
+                 <ul>
+                    <li>Formularios</li>
+                    <li>Tablas</li>
+                    <li>Enlaces</li>
+                 </ul>
+         </nav>
+    </header>
+    <!-- Contenido -->
+     <main>
+            <!-- uso div
+            <div>
+                facilita el diseño de los elementos
+            </div> -->
+
+            <!-- etiqueta span -->
+             <!-- <p>La rosa es<span>roja</span> y blanca.</p>  para textos que no estan agrupados en una categoria definida texto que no significa nada. Ej: "__" "." "," "precio" no son semanticos se usan para dar estilos-->
+        
+        <section class="contenedor" id="que-es-html">
+            <h2>¿Qués es HTML?</h2>
+            <p>Lenguaje de marcado que estructura el contenido de una página web. Basado en etiquetas que pueden ser semánticas o no semánticas.</p>
+            <span>Recuerda que </span><span>¡No es un lenguaje de programación!</span>
+            <!--las etiquetas 'span' se organizan uno al lado de otro horizontalmente. Los parrafos y titulos se organizan vertical por defecto--> 
+
+        </section> <!-- los atributos van en la parte de etiqueta de apertura-->
+
+        <section class="contenedor" id="semantica">
+            <h2>Semantica HTML</h2>
+            <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/01/html-vs-html5.webp" alt="html semantica">
+        </section>
+        <section class="contenedor" id="etiquetas-basicas">
+            <h2>Etiquetas Básicas de HTML</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>h1, h2, h3, h4, h5, h6</td>
+                        <td>Titulos y subtitulos en HTML.</td>
+                    </tr>
+                    <tr>
+                        <td>p</td>
+                        <td>parrafos</td>
+                    </tr>
+                    <tr>
+                        <td>img</td>
+                        <td>muestra imagenes (atributos src y alt)</td>
+                    </tr>
+                    <tr>
+                        <td>ul, ol</td>
+                        <td>Definir listas desorganizadas y organizadas.</td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+
+        </section>
+        <section class="contenedor" id="formularios">
+            <h2>Formularios en HTML</h2>
+            <p>Herramienta fundamental para recopilar datos de un usuario, a traves de diferentes campos como: </p>
+            <ul>
+                <li>Textos. Para pedir nombre, contraseña</li>
+                <li>Casillas de texto - áreas de texto. Descripciones mas largas, pregunta abierta.</li>
+                <li>Listas desplegables - rango de edad.</li>
+                <li>Botones</li>
+                <li>Subir archivos - file</li>
+                <li>Checkbox</li>
+                <li>Fecha - date</li>
+                <li>Rangos - range</li>
+                <li>Buscar - search</li>
+            </ul>
+
+            <div>
+                <h3>Ejemplo: Formulario de inicio de sesión</h3>
+                <!-- Los formularios tienen como objetivo enviar, actializar... información pero funciona cuando se usa con un backend con el atributo 'action'-->
+                <form>
+                    <label for="nombre">Nombre de usuario:</label>
+                    <input type="text" id="nombre" placeholder="ingrese nombre..." required>
+
+                    <label for="contrasena">Contraseña de usuario:</label>
+                    <input type="password" id="contrasena" placeholder="ingrese contraseña" required> <!-- el for esta relacionado con id-->
+
+                    <input type="button" value="Iniciar Sesión">
+                </form>
+            </div>
+        </section>
+        <section class="contenedor" id="tablas"></section>
+        <section class="contenedor" id="enlaces"></section>
+     </main>
+     
+     <!-- Pie de Página -->
+      <footer>
+
+      </footer>
+</body>
+</html>

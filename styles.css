@@ -1,0 +1,35 @@
+/* ESto es un Comentario en CSS */
+/* ASCII PARA { ES Alt + 123 */
+/* CASCADING STYLESHEET Hoja de estilos en cascada 
+Siendo el primero el mas importante*/
+/*  SELECTOR : elemento que desea modificar 
+    Tipo de selectores:
+        1. etiquetas -> menos especificos
+        2. clases ->  especificidad media
+            para el lo reconosca siempre debe tener .nombreClase
+        3. Identificador unico  -> es un id y se indica en cs como #
+    */
+/* Especificidad de acuerdo a lo que yo quiero */
+
+
+body {
+    background-color: #fffff0;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+    color: #476088;
+}
+
+h2 {
+    color: #476088;
+}
+
+.parrafo-1{
+    background-color: rgb(101, 158, 207);
+    font-size: 20px ; font-style: italic;
+}
+#titulo2{
+    font-size: 25px; font-style: oblique ;
+}
