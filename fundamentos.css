@@ -1,0 +1,68 @@
+/* CSS con Buenas Prácticas*/
+
+/* Establecer condiciones iniciales */
+/*  1- importaciones  - Tipografía
+    2- definir las variables que va a utilizar: (variable- espacio de memoria donde se puede almacenar información)
+    Paleta de colores
+} */
+
+@import url('https://fonts.cdnfonts.com/css/anonymous-pro'); /*css rule: font-family: 'Anonymous Pro', sans-serif;*/
+@import url('https://fonts.cdnfonts.com/css/major-mono-display-2'); /*css rule:font-family: 'Major Mono Display', sans-serif;*/
+
+/*variables*/
+:root{
+    --color-fondo:#dde4f8;
+    --color-texto:#0B2985;
+    --color-enfasis:#7D41E8;
+    --color-enfasis2:#41D7E8;
+    --color-enfasis3:#416EE8;
+    --tamaño-titulo: 35px;
+
+}
+
+*{
+    margin:0;
+}
+
+body{
+    /*  */
+    font-family:'Anonymous Pro', sans-serif;
+    background-color: var(--color-fondo);
+    color:var(--color-texto);
+    overflow-x:hidden; /*Quitar Scroll horizontal*/
+}
+/*---------------------------HEADER--------------------------*/
+/* defina los tamaños de las secciones */
+header{
+    /* ancho - dimensiones que se van a mostrar en pantalla 
+    vh -ancho de pantalla */
+    width: 100vw; /*asi se adapta a cualquier pantalla viewport width*/
+    height: 10vh; /*alto  */
+    background-color: var(--color-enfasis2);    
+}
+
+/* Navegador */
+nav{
+    display: flex; /* organizacion de elementos*/
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+    gap: 42px; 
+}
+.logo{
+    width:60px;
+    height: 60px;
+}
+/*-------------------------------MAIN---------------------------*/
+
+h2{
+    font-size: var(--tamaño-titulo);
+}
+
+
+/*---------------------------FOOTER------------------------------*/
+
+
